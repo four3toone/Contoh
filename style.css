@@ -1,0 +1,73 @@
+/* Rules Section Styles */
+.bg-brown {
+  background-color: #6f4e37; /* Custom brown color */
+}
+.bg-brown {
+  background-color: #6f4e37; /* Anda bisa mengganti dengan kode warna coklat yang diinginkan */
+}
+
+.text-brown {
+  color: #6a4e23; /* Dark chocolate text color */
+}
+
+ul.list-unstyled {
+  list-style-type: none;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 10px;
+}
+
+ul.list-unstyled i {
+  margin-right: 10px; /* Spacing between icon and text */
+}
+
+ul.list-unstyled li:hover {
+  background-color: #f4f1ea;
+  padding-left: 10px;
+  border-left: 3px solid #6a4e23;
+  transition: all 0.3s;
+}
+
+ul.list-unstyled i.bi-check-circle-fill {
+  font-size: 25px; /* Icon size */
+}
+
+ul.list-unstyled li {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+body {
+  padding-top: 5rem; /* Mengatur jarak seluruh konten dari atas */
+}
+
+section {
+  padding-top: 3rem; /* Tambahkan jarak atas di setiap section */
+}
+
+.bg-brown {
+  background-color: #6f4e37;
+}
+
+.text-brown {
+  color: #6f4e37;
+}
+
+.btn-brown {
+  background-color: #6f4e37;
+  border: none;
+}
+
+.btn-brown:hover {
+  background-color: #5d4037;
+}
+.navbar-brand {
+  font-family: "Merriweather", serif;
+  font-size: 1.8rem;
+}
+
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+}

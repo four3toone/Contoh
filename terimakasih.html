@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap");
+
+      body {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin: 50px;
+        background-color: #f4ebe3;
+        color: #4b2e24;
+      }
+      .container {
+        border: 1px solid #d3b8a0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(75, 46, 36, 0.3);
+        background-color: #fff7f0;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+      }
+      .container::before {
+        content: "❤";
+        font-size: 100px;
+        color: rgba(255, 192, 203, 0.2);
+        position: absolute;
+        top: -20px;
+        left: -20px;
+      }
+      .container::after {
+        content: "❤";
+        font-size: 100px;
+        color: rgba(255, 192, 203, 0.2);
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+      }
+      h1 {
+        font-family: "Pacifico", cursive;
+        color: #8b5e3c;
+        margin-bottom: 10px;
+      }
+      .table-number {
+        font-size: 2em;
+        color: #4b2e24;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 1.2em;
+        color: #6b4a36;
+        margin-bottom: 20px;
+      }
+      .hearts {
+        font-size: 1.5em;
+        color: #ff6f91;
+        animation: float 2s infinite ease-in-out;
+      }
+      .footer {
+        margin-top: 30px;
+        font-size: 1em;
+        color: #4b2e24;
+      }
+      .footer a {
+        color: #8b5e3c;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+      .home-link {
+        display: block;
+        margin-top: 20px;
+        font-size: 1.1em;
+        color: #8b5e3c;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .home-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Thank You!</h1>
+      <p>We appreciate your visit.</p>
+      <div class="table-number" id="tableNumber"></div>
+      <div class="hearts">❤ ❤ ❤</div>
+    </div>
+
+    <div class="footer">
+      <p>Any questions? <a href="https://wa.me/1234567890" target="_blank">Chat with us on WhatsApp</a></p>
+      <a href="index.html" class="home-link">Back to Home</a>
+    </div>
+
+    <script>
+      // Generate a random table number
+      function getRandomTableNumber() {
+        const number = Math.floor(Math.random() * 20) + 1; // Random number between 1-20
+        const letter = String.fromCharCode(65 + Math.floor(Math.random() * 3)); // Random letter A-C
+        return `${number}${letter}`;
+      }
+
+      // Display the random table number
+      document.getElementById("tableNumber").textContent = `Table Number: ${getRandomTableNumber()}`;
+    </script>
+  </body>
+</html>
